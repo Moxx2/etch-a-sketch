@@ -9,12 +9,16 @@ function createRow() {
     const row = document.createElement('div');
     row.setAttribute('class', 'row');
     container.appendChild(row);
+    let squareOpacity = 0;
     
     for (i = 0; i < userAnswer; i++) {
         const square = document.createElement('div');
         square.setAttribute('class', 'square');
         square.addEventListener('mouseenter', () => {
-            square.style.backgroundColor = 'red';
+            if (square.style.opacity < 1) {
+                squareOpacity += 0.1;
+                square.style.opacity = squareOpacity;
+            }
         });
         row.appendChild(square);
     };

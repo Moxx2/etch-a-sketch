@@ -30,4 +30,6 @@
 .square {
     width: 100px;
     aspect-ratio: 1;
+    background-color: black;  
+    opacity: 0;
 }
