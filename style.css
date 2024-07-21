@@ -1,13 +1,16 @@
 .container {
-    display: flex;
-    width: 520px;
+    width: 920px;
     margin: 0 auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .square {
-    width: 115px;
-    height: 115px;
+    width: 100px;
+    aspect-ratio: 1;
     border: solid black;
 }
